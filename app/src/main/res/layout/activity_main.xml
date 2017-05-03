@@ -1,0 +1,146 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/sucess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progress"
+        android:layout_alignStart="@+id/progress"
+        android:layout_below="@+id/progress"
+        android:layout_marginTop="23dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Button"
+        android:layout_below="@+id/sucess"
+        android:layout_alignLeft="@+id/sucess"
+        android:layout_alignStart="@+id/sucess" />
+
+    <Button
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/warning"
+        android:layout_alignStart="@+id/warning" />
+
+    <Button
+        android:id="@+id/basic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Button"
+        android:layout_below="@+id/error"
+        android:layout_alignLeft="@+id/error"
+        android:layout_alignStart="@+id/error" />
+
+    <Button
+        android:id="@+id/contenttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/basic"
+        android:layout_alignStart="@+id/basic"
+        android:layout_below="@+id/basic"
+        android:layout_marginTop="19dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/iconic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contenttitle"
+        android:layout_alignStart="@+id/contenttitle"
+        android:layout_below="@+id/contenttitle"
+        android:layout_marginTop="19dp"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="Sweet alert progress"
+        android:layout_alignBaseline="@+id/progress"
+        android:layout_alignBottom="@+id/progress"
+        android:layout_toRightOf="@+id/progress"
+        android:layout_toEndOf="@+id/progress" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/warning"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="13dp"
+        android:text="Sucess sweet alert" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warning Sweet alert"
+        android:layout_alignBaseline="@+id/warning"
+        android:layout_alignBottom="@+id/warning"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:text="Error Sweet Alert" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contenttitle"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="12dp"
+        android:text="Basic sweet alert" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iconic"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginBottom="12dp"
+        android:text="Sweet alert with message" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iconic"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="13dp"
+        android:text="Sweet alert with image" />
+</RelativeLayout>
